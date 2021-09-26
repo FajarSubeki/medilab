@@ -325,55 +325,45 @@
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
                         ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
-
-                <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+                <!-- action="<?=base_url()?>pasien/add_edit_save/<?php if($pasien) { echo $pasien[0]->id_pasien; } ?>" enctype="multipart/form-data" -->
+                <form method="post" role="form" action="<?=base_url()?>index.php/register_patient/<?php if($pasien) { echo $pasien[0]->id_pasien; } ?>">
                     <div class="row">
                         <div class="col-md-4 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            <input type="text" name="name" required="" class="form-control" id="name" placeholder="Your Name"
+                                >
                             <div class="validate"></div>
                         </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                data-rule="email" data-msg="Please enter a valid email">
+                        <div class="col-md-4 form-group mt-md-0">
+                            <input type="number" class="form-control" required="" name="tlp" id="phone" placeholder="Your Phone"
+                                >
                             <div class="validate"></div>
                         </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
-                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone"
-                                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <div class="col-md-4 form-group">
+                            <select name="jk" id="department" required="" class="form-select">
+                                <option value="">Gender</option>
+                                <option value="l">Male</option>
+                                <option value="p">Female</option>
+                            </select>
                             <div class="validate"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 form-group mt-3">
-                            <input type="datetime" name="date" class="form-control datepicker" id="date"
-                                placeholder="Appointment Date" data-rule="minlen:4"
-                                data-msg="Please enter at least 4 chars">
+                            <input readonly type="text" required="" name="no_rekam_medis" class="form-control"
+                                placeholder="Checkup Number Medical"  value="<?php echo $no_rm; ?>"
+                                >
                             <div class="validate"></div>
                         </div>
                         <div class="col-md-4 form-group mt-3">
-                            <select name="department" id="department" class="form-select">
-                                <option value="">Select Department</option>
-                                <option value="Department 1">Department 1</option>
-                                <option value="Department 2">Department 2</option>
-                                <option value="Department 3">Department 3</option>
-                            </select>
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-md-4 form-group mt-3">
-                            <select name="doctor" id="doctor" class="form-select">
-                                <option value="">Select Doctor</option>
-                                <option value="Doctor 1">Doctor 1</option>
-                                <option value="Doctor 2">Doctor 2</option>
-                                <option value="Doctor 3">Doctor 3</option>
-                            </select>
+                            <input type="date" required="" name="tgl_lahir" class="form-control"
+                                placeholder="Date of Birth">
                             <div class="validate"></div>
                         </div>
                     </div>
 
                     <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5"
-                            placeholder="Message (Optional)"></textarea>
+                        <textarea class="form-control" required="" name="alamat" rows="5"
+                            placeholder="Your Address"></textarea>
                         <div class="validate"></div>
                     </div>
                     <div class="text-center mt-5 mb-5"><button type="submit" class="appointment-btn">Make an Appointment</button></div>
@@ -390,7 +380,7 @@
                     <p class="mb-0 text-secondary">
                         Copyright © <script>
                         document.write(new Date().getFullYear())
-                        </script> Soft by Medilab IT.
+                        </script> by Medilab IT.
                     </p>
                 </div>
             </div>

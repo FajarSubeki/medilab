@@ -16,7 +16,7 @@
                     <br/>
                     <input type="text" required="" onkeyup="caridata()" id="keyword" class="form-control" placeholder="Input username do you want search...">
                     <br/>
-                    <div class="table-responsive p-0">
+                    <div class="table-responsive p-0" id="view">
                         <table id="datatables" class="table table-striped table-bordered align-items-center mb-0">
                             <thead>
                                 <tr>
@@ -110,8 +110,8 @@ function caridata() {
             // Ganti isi dari div view dengan view yang diambil dari controller 
             $("#view").html(response);
             $('#datalist').dataTable({
-                "searching": true,
-                "bLengthChange": true,
+                "searching": false,
+                "bLengthChange": false,
             });
         },
         error: function(xhr, ajaxOptions, thrownError) { // Ketika terjadi error

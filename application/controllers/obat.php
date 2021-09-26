@@ -15,7 +15,7 @@ class Obat extends CI_Controller{
 	public function index(){
 
     $data['data_obat'] = $this->MObat->get_data();
-		$this->template->load('template_admin_rs','rs/obat/index',$data);
+		$this->template->load('admin/index_admin','admin/rs/obat/index',$data);
 
   }
 
@@ -29,7 +29,7 @@ class Obat extends CI_Controller{
                    
     }
     
-    $this->template->load('template_admin_rs','rs/obat/add_edit',$data);
+    $this->template->load('admin/index_admin','admin/rs/obat/add_edit',$data);
 
   }
 
@@ -54,7 +54,7 @@ class Obat extends CI_Controller{
                     
       }
       
-      $this->template->load('template_admin_rs','rs/obat/add_edit',$data);
+      $this->template->load('admin/index_admin','admin/rs/obat/add_edit',$data);
     } else {
       if($id == '') {
           $data = array(
@@ -74,7 +74,7 @@ class Obat extends CI_Controller{
         $edit = $this->MObat->edit_obat($data, $id);
       }
 
-      redirect("obat/index");
+      redirect("index.php/obat/index");
     }
 
   }
@@ -83,7 +83,7 @@ class Obat extends CI_Controller{
 
     $this->db->delete('tbl_obat');
     
-    redirect("obat/index");
+    redirect("index.php/obat/index");
 
   }
 

@@ -12,17 +12,17 @@
                 </div>
                 <div class="card-body px-4 pt-0 pb-2">
                     <br />
-                    <div id="pesan_validasi" style="width: 20px; background-color:#FCC; padding:5px; ">
+                    <div id="pesan_validasi" style="background-color:#FCC; padding:5px; ">
                     </div>
                     <form id='register_user'>
-                      <div class="item form-group">
+                      <div class="form-group row">
                             <label class="col-form-label col-md-2 col-sm-2 label-align-left">Nama user </span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
                                 <input type="text" id="txt_nama" name="txt_nama" class="form-control">
                             </div>
                         </div>
-                        <div class="item form-group">
+                        <div class="form-group row">
                             <label class="col-form-label col-md-2 col-sm-2 label-align-left">Username </span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
@@ -33,12 +33,12 @@
                                         height="25" onclick="check_user()"></a>
                             </div>
                         </div>
-                        <div class="item form-group">
+                        <div class="form-group row">
                             <label class="col-form-label col-md-2 col-sm-2 label-align-left">Level Akses </span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
                                 <select name="opt_role_askes" class="form-control" id="role" onchange="check_user()">
-                                    <option value='' disabled selected>-- Level Askes --</option>
+                                    <option value='' disabled selected>-- Level Akses --</option>
                                     <option value="1">Admin User</option>
                                     <option value="2">Admin MR</option>
                                     <option value="3">Dokter</option>
@@ -46,28 +46,28 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="item form-group">
+                        <div class="form-group row">
                             <label class="col-form-label col-md-2 col-sm-2 label-align-left">No. Hp </span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
                                 <input type="text" name="txt_no_hp" id="txt_no_hp" class="form-control">
                             </div>
                         </div>
-                        <div class="item form-group">
+                        <div class="form-group row">
                             <label class="col-form-label col-md-2 col-sm-2 label-align-left">Email</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
                                 <input type="email" name="txt_email" id="txt_email" class="form-control">
                             </div>
                         </div>
-                        <div class="item form-group">
+                        <div class="form-group row">
                             <label class="col-form-label col-md-2 col-sm-2 label-align-left">Password</span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
                                 <input type="password" name="txt_password" id="txt_ password" class="form-control">
                             </div>
                         </div>
-                        <div class="item form-group">
+                        <div class="form-group row">
                             <label class="col-form-label col-md-2 col-sm-2 label-align-left">Konfirmasi Password </span>
                             </label>
                             <div class="col-md-6 col-sm-6 ">
@@ -76,9 +76,9 @@
                             </div>
                         </div>
                         <div class="ln_solid"></div>
-                        <div class="item form-group">
+                        <div class="form-group row">
                             <div class="offset-md-2">
-                                <a class="btn btn-danger" href="<?=base_url()?>user">Back</a>
+                                <a class="btn btn-danger" href="<?=base_url()?>index.php/user">Back</a>
                                 <button class="btn btn-warning" type="reset">Reset</button>
                                 <button type="submit" class="btn btn-success">Submit</button>
 
@@ -92,6 +92,8 @@
         </div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 <script>
 window.onload = function() {
@@ -121,7 +123,7 @@ function check_user() {
             data: {
                 role: value
             },
-            url: "<?php echo base_url();?>user/check_user_auto",
+            url: "<?php echo base_url();?>index.php/user/check_user_auto",
             success: function(data) {
                 console.log(data);
                 var new_username = isi + data;
@@ -130,10 +132,6 @@ function check_user() {
         });
     }
 }
-
-$(document).ready(function() { 
-  
-})
 
 $('#register_user').submit(function(e) {
     e.preventDefault();
@@ -154,7 +152,7 @@ $('#register_user').submit(function(e) {
                 //tampilkan noticed sukses
                 alert('USER BERHASIL DI DAFTARKAN .. ');
                 //rediect ke halaman lain
-                window.location = "<?php echo base_url();?>user";
+                window.location = "<?php echo base_url();?>index.php/user";
             } // tutup case validasi VALID
 
         } // tutup data response

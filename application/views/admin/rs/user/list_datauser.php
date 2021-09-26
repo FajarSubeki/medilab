@@ -15,7 +15,7 @@
                 <div class="card-body px-0 m-3 pt-0 pb-2">
                     <br/>
                     <div class="table-responsive p-0">
-                        <table id="datatables" class="table table-striped table-bordered align-items-center mb-0">
+                        <table id="datalist" class="table table-striped table-bordered align-items-center mb-0">
                             <thead>
                                 <tr>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
@@ -41,7 +41,7 @@
                             <tbody>
                                 <?php 
                                     $no = 1;
-                                    foreach($user as $row) {
+                                    foreach($user as $view) {
                                 ?>
                                 <tr>
                                     <td class="align-middle text-center text-xs"><?=$no++?></td>
