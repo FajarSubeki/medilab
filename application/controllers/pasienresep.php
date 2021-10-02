@@ -34,6 +34,42 @@ class PasienResep extends CI_Controller{
 		$mpdf->Output("$output", 'I');
   }
 
+  public function add_patient_checkup(){
+    $data['data_pasien'] = $this->MPemeriksaan->get_data_pasien();
+
+    $this->template->load('admin/index_admin','admin/rs/pasien_resep/add_checkup',$data);
+  }
+
+  public function add_patient_checkup_save(){
+
+    $name = $this->input->post('name');
+    $no_rekam_medis = $this->input->post('no_rekam_medis');
+    $anamase = $this->input->post('anamase');
+    $kode_diagnosa = "1";
+    $tindakan = $this->input->post('tindakan');
+    $obat = $this->input->post('obat');
+    $tanggal_periksa = date('Y-m-d');
+    $status_pemeriksaan = $this->input->post('status');
+    $biaya_dokter = $this->input->post('biaya_dokter');
+    
+    $data = array(
+      'nama_pasien'   => $name,
+      'no_rekam_medis' => $no_rekam_medis,
+      'anamase' => $anamase,
+      'kode_diagnosa' => $kode_diagnosa,
+      'tindakan'    => $tindakan,
+      'obat' => $obat,
+      'tanggal_periksa' => $tanggal_periksa,
+      'status_pemeriksaan' => $status_pemeriksaan,
+      'biaya_dokter' => $biaya_dokter
+    );
+
+    $add_pasien_checkup = $this->MPemeriksaan->add_pasien_checkup($data);
+
+    redirect("index.php/pasienresep/index/");
+
+}
+
   public function detil_pasien($id_pemeriksaan){
     $data['data_pasien'] = $this->MPemeriksaan->get_data_detail($id_pemeriksaan);
     $data['data_obat'] = $this->MPemeriksaan->get_data_obat($id_pemeriksaan);
@@ -61,6 +97,19 @@ class PasienResep extends CI_Controller{
     $data_obat = $this->MPemeriksaan->cari_data_obat($search);
     $data['data_obat'] = $data_obat;
     $this->load->view('admin/rs/pasien_resep/data_obat', $data);
+  }
+
+  public function add_obat_form($id_pemeriksaan){
+    $data['data_pasien'] = $this->MPemeriksaan->get_data_detail($id_pemeriksaan);
+    $data['data_obat'] = "";
+    $this->template->load('admin/index_admin','admin/rs/pasien_resep/add_edit_obat',$data);
+  }
+
+  public function add_obat_form_edit($id_pemeriksaan, $id_obat){
+    $data['data_obat'] = $this->MPemeriksaan->get_data_obat_($id_pemeriksaan);
+    $data['data_pasien'] = $this->MPemeriksaan->get_data_detail($id_pemeriksaan);
+   
+    $this->template->load('admin/index_admin','admin/rs/pasien_resep/add_edit_obat',$data);
   }
 
   public function add_obat($id_pemeriksaan){

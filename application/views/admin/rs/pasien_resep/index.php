@@ -7,6 +7,9 @@
                         <div class="col-6 d-flex align-items-center">
                             <h6 class="mb-0">List Patient Checkup</h6>
                         </div>
+                        <div class="col-6 text-end">
+                            <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/pasienresep/add_patient_checkup"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add Patien Checkup</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card-body px-0 m-3 pt-0 pb-2">
@@ -27,9 +30,9 @@
                                     <th
                                         class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Anamase</th>
-                                    <th
+                                    <!-- <th
                                         class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Diagnosa</th>
+                                        Diagnosa</th> -->
                                     <th
                                         class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Tanggal</th>
@@ -59,11 +62,11 @@
                                             <?php echo $row['anamase'];?>
                                         </p>
                                     </td>
-                                    <td class="align-middle text-center text-xs">
+                                    <!-- <td class="align-middle text-center text-xs">
                                         <p class="text-xs text-secondary mb-0">
                                             <?php echo $row['diagnosis'];?>
                                         </p>
-                                    </td>
+                                    </td> -->
                                     <td class="align-middle text-center text-xs">
                                         <p class="text-xs text-secondary mb-0">
                                             <?php echo date("d/m/Y", strtotime($row['tanggal_periksa']));?>

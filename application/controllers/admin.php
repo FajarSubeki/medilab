@@ -18,7 +18,7 @@ class Admin extends CI_Controller {
     }
 
     public function index(){
-        if ($this->session->userdata('role') != 1 && $this->session->userdata('role') != 2 && $this->session->userdata('role') != 4) { 
+        if ($this->session->userdata('role') != 1 && $this->session->userdata('role') != 2 && $this->session->userdata('role') != 4 && $this->session->userdata('role') != 3) { 
             session_destroy();
 		    redirect('index.php/auth');
         }

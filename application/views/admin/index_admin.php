@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="<?=base_url()?>assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="<?=base_url()?>assets/img/favicon.png">
     <title>
-        Soft UI Dashboard by Creative Tim
+        Medilab Dashboard by Creative Tim
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -37,7 +37,7 @@
             <a class="navbar-brand m-0" href="https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html"
                 target="_blank">
                 <img src="<?=base_url()?>assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
-                <span class="ms-1 font-weight-bold">Soft UI Dashboard</span>
+                <span class="ms-1 font-weight-bold">Medilab Dashboard</span>
             </a>
         </div>
         <hr class="horizontal dark mt-0">
@@ -372,7 +372,7 @@
         <div class="card shadow-lg ">
             <div class="card-header pb-0 pt-3 ">
                 <div class="float-start">
-                    <h5 class="mt-3 mb-0">Soft UI Configurator</h5>
+                    <h5 class="mt-3 mb-0">Medilab Configurator</h5>
                     <p>See our dashboard options.</p>
                 </div>
                 <div class="float-end mt-4">

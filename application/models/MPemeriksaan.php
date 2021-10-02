@@ -20,6 +20,25 @@ class MPemeriksaan extends CI_Model{
 
     }
 
+    function add_pasien_checkup($data){
+        $this->db->insert('tbl_pemeriksaan_pasien',$data);
+    }
+
+    function get_data_pasien(){
+ 
+        $query = $this->db->query("select * from tbl_pasien");
+        return $query->result();
+
+    }
+
+    function get_data_obat_($id){
+ 
+        $query = $this->db->query("select a.*, b.nama_obat, b.harga from tbl_riwayat_pemberian_obat a left join tbl_obat b on a.kode_barang = b.id
+        where a.id_data_pemeriksaan = '$id'");
+        return $query->result();
+
+    }
+
     function get_data_obat($id){
  
         $query = $this->db->query("select a.*, b.nama_obat, b.harga from tbl_riwayat_pemberian_obat a left join tbl_obat b on a.kode_barang = b.id

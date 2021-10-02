@@ -88,7 +88,7 @@
                                     </p>
                                 </td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td width="20%" class="align-middle text-xs">
                                     <h6 class="mb-0 text-xs">Diagnosics</h6>
                                 </td>
@@ -97,7 +97,7 @@
                                         <?=$data_pasien[0]['diagnosis']?>
                                     </p>
                                 </td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <td width="20%" class="align-middle text-xs">
                                     <h6 class="mb-0 text-xs">Action</h6>
@@ -149,9 +149,7 @@
                             </h6>
                         </div>
                         <div class="col-6 text-end">
-                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target=".bs-example-modal-lg"><i class="fa fa-plus-square"></i> Tambah
-                                Obat</button>
+                        <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/pasienresep/add_obat_form/<?=$data_pasien[0]['id_data_pemeriksaan']?>"><i class="fas fa-plus"></i>&nbsp;&nbsp;Tambah Obat</a>
                         </div>
                     </div>
                 </div>
@@ -222,9 +220,8 @@
                                     <td class="align-middle text-center text-xs">Rp.
                                         <?php echo number_format($total);?></td>
                                     <td class="align-middle text-center text-xs">
-                                        <a href="javascript:(0)" class="text-secondary font-weight-bold text-xs"
-                                            title="edit" data-toggle="modal" data-target=".bs-example-modal-lg"
-                                            onclick="edit_obat('<?=$row['id']?>', '<?=$row['kode_barang']?>', '<?=$row['nama_obat']?>', '<?=$row['qty']?>', '<?=$row['status']?>')">Edit</a>
+                                        <a href="<?=base_url()?>index.php/pasienresep/add_obat_form_edit/<?=$data_pasien[0]['id_data_pemeriksaan']?>/<?=$row['id'];?>" class="text-secondary font-weight-bold text-xs"
+                                            title="edit">Edit</a>
                                         <a href="<?=base_url()?>index.php/pasienresep/delete_obat/<?=$row['id'];?>/<?=$data_pasien[0]['id_data_pemeriksaan']?>"
                                             onclick="return confirm('Are you sure to delete data?')"
                                             class="text-secondary font-weight-bold text-xs" title="delete">Delete</a>
@@ -268,61 +265,7 @@
 </div>
 </div>
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Form Pemberian Obat</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <form class="form-horizontal form-label-left" method="post"
-                action="<?=base_url()?>index.php/pasienresep/add_obat/<?=$data_pasien[0]['id_data_pemeriksaan']?>">
-                <div class="modal-body">
-                    <div class="form-group row ">
-                        <label class="control-label col-md-3 col-sm-3 ">Nama Obat</label>
-                        <div class="col-md-9 col-sm-9 ">
-                            <input type="text" class="form-control" placeholder="Nama Obat" name="obat" required
-                                onkeyup="cekobat()" id="obat">
-                            <input type="hidden" id="id_obat" name="id_obat">
-                            <input type="hidden" id="id_pemberian_obat" name="id_pemberian_obat" value=''>
-                            <div class="obat-result" id="obat-result"></div>
-                        </div>
-                    </div>
-                    <div class="form-group row ">
-                        <label class="control-label col-md-3 col-sm-3 ">QTY</label>
-                        <div class="col-md-9 col-sm-9 ">
-                            <input type="number" class="form-control" id="qty" placeholder="QTY" name="qty" required>
-                        </div>
-                    </div>
-                    <div class="form-group row ">
-                        <label class="control-label col-md-3 col-sm-3 ">Status</label>
-                        <div class="col-md-9 col-sm-9 ">
-                            <select class="form-control" name="status" id="status">
-                                <option value="ready">Ready</option>
-                                <option value="not ready">Not Ready</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
 <script>
-function edit_obat(id, id_obat, nama, qty, status) {
-    $("#obat").val(nama);
-    $("#id_pemberian_obat").val(id);
-    $("#id_obat").val(id_obat);
-    $("#qty").val(qty);
-    $("#status").val(status);
-}
 
 function cekobat() {
     var search = $("#obat").val();

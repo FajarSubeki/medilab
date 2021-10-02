@@ -68,10 +68,10 @@
                           <td width="20%">Anamase</td>
                           <td>&nbsp;&nbsp;<?=$data_pasien[0]['anamase']?></td>
                       </tr>
-                      <tr>
+                      <!-- <tr>
                           <td width="20%">Diagnosis</td>
                           <td>&nbsp;&nbsp;<?=$data_pasien[0]['diagnosis']?></td>
-                      </tr>
+                      </tr> -->
                       <tr>
                           <td width="20%">Tindakan</td>
                           <td>&nbsp;&nbsp;<?=$data_pasien[0]['tindakan']?></td>
