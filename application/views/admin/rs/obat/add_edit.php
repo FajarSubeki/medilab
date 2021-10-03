@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-6 d-flex align-items-center">
                             <h6 class="mb-0">Obat Form
-                                <?php if($obat) { echo "Edit"; } else { echo "Registration"; } ?></h6>
+                                <?php if($obat) { echo "Edit"; } else { echo "Registrasi"; } ?></h6>
                         </div>
                     </div>
                 </div>

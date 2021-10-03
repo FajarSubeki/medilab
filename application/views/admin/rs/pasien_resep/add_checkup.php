@@ -5,7 +5,7 @@
                 <div class="card-header pb-0">
                     <div class="row">
                         <div class="col-6 d-flex align-items-center">
-                            <h6 class="mb-0">Checkup Patient Form</h6>
+                            <h6 class="mb-0">Pemeriksaan Pasien Form</h6>
                         </div>
                     </div>
                 </div>

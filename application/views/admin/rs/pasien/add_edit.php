@@ -5,7 +5,7 @@
                 <div class="card-header pb-0">
                     <div class="row">
                         <div class="col-6 d-flex align-items-center">
-                            <h6 class="mb-0">Patien Form
+                            <h6 class="mb-0">Pasien Form
                                 <?php if($pasien) { echo "Edit"; } else { echo "Registration"; } ?></h6>
                         </div>
                     </div>

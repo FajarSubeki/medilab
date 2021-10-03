@@ -8,7 +8,7 @@
                       <h6 class="mb-0">Data Obat</h6>
                     </div>
                     <div class="col-6 text-end">
-                      <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/obat/add_edit"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add New Obat</a>
+                      <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/obat/add_edit"><i class="fas fa-plus"></i>&nbsp;&nbsp;Tambah Obat</a>
                     </div>
                   </div>
                 </div>

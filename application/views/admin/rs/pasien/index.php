@@ -5,7 +5,7 @@
                 <div class="card-header pb-0">
                 <div class="row">
                     <div class="col-6 d-flex align-items-center">
-                      <h6 class="mb-0">List Patien</h6>
+                      <h6 class="mb-0">List Pasien</h6>
                     </div>
                     <div class="col-6 text-end">
                       <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/pasien/add_edit"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add Patient</a>

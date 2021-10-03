@@ -8,7 +8,7 @@
                       <h6 class="mb-0">List User</h6>
                     </div>
                     <div class="col-6 text-end">
-                      <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/user/add_edit_user"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add New User</a>
+                      <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/user/add_edit_user"><i class="fas fa-plus"></i>&nbsp;&nbsp;Tambah User</a>
                     </div>
                   </div>
                 </div>

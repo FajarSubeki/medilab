@@ -14,7 +14,7 @@
                 </div>
                 <div class="card-body px-0 m-3 pt-0 pb-2">
                     <br/>
-                    <input type="text" required="" onkeyup="caridata()" id="keyword" class="form-control" placeholder="Input username do you want search...">
+                    <input type="text" required="" onkeyup="caridata()" id="keyword" class="form-control" placeholder="Ketikan keyword user yang ingin dicari...">
                     <br/>
                     <div class="table-responsive p-0" id="view">
                         <table id="datatables" class="table table-striped table-bordered align-items-center mb-0">

@@ -5,10 +5,10 @@
                 <div class="card-header pb-0">
                     <div class="row">
                         <div class="col-6 d-flex align-items-center">
-                            <h6 class="mb-0">List Patient Checkup</h6>
+                            <h6 class="mb-0">List Pemeriksaan Pasien</h6>
                         </div>
                         <div class="col-6 text-end">
-                            <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/pasienresep/add_patient_checkup"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add Patien Checkup</a>
+                            <a class="btn bg-gradient-dark mb-0" href="<?=base_url()?>index.php/pasienresep/add_patient_checkup"><i class="fas fa-plus"></i>&nbsp;&nbsp;Tambah Pemeriksaan</a>
                         </div>
                     </div>
                 </div>

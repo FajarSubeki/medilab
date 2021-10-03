@@ -25,9 +25,9 @@
                     <img width="90" src="<?=base_url()?>assets/img/logo_klinik.png"/>
                     </div>
                     <div class="col-sm-9" style="text-align:center;position: center;margin-top:-80px;">
-                        <h2 style="text-align:center;position: center;"><b>RS Sentosa Jaya</b></h2>
-                        <h7 style="text-align:center;position: center;">JL.Jawa Blok HH, Kp. Tegal Tangsi RT.003 RW.003<br/>
-                        Jatiwangi - Cikarang Barat - Bekasi - Phone 0878-8688-8577 Email rssentosa@yahoo.com</h7>
+                        <h2 style="text-align:center;position: center;"><b>RS MEDILAB</b></h2>
+                        <h7 style="text-align:center;position: center;">Jln. Raya Kenangan Yang Terindah Rt 02 Rw 08<br/>
+                        Jatinangor - Bekasi Timur - Bekasi - Phone 0896-3630-1154 Email cs@medilab.com</h7>
                     </div>
                 </div>
                 <br>

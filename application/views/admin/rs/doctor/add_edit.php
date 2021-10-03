@@ -5,8 +5,8 @@
                 <div class="card-header pb-0">
                     <div class="row">
                         <div class="col-6 d-flex align-items-center">
-                            <h6 class="mb-0">Doctor Form
-                                <?php if($dokter) { echo "Edit"; } else { echo "Registration"; } ?></h6>
+                            <h6 class="mb-0">Dokter Form
+                                <?php if($dokter) { echo "Edit"; } else { echo "Registrasi"; } ?></h6>
                         </div>
                     </div>
                 </div>

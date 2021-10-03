@@ -61,7 +61,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link me-2 scrollto" href="#doctors">
                                         <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
-                                        Doctor
+                                        Dokter
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -73,7 +73,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link me-2 scrollto" href="#appointment">
                                         <i class="fas fa-key opacity-6 text-dark me-1"></i>
-                                        Make an Appointment
+                                        Form Registrasi
                                     </a>
                                 </li>
                             </ul>
@@ -94,8 +94,8 @@
         <section id="hero" class="d-flex align-items-center">
             <div class="container">
                 <h1>Welcome to Medilab</h1>
-                <h2>We are team of talented designers making websites with Bootstrap</h2>
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                <h2>Medilab adalah ahlinya layanan di bidang kesehatan dan perawatan</h2>
+                <a href="#appointment" class="btn-get-started scrollto" >Mulai Register</a>
             </div>
         </section><!-- End Hero -->
         <!-- ======= Why Us Section ======= -->
@@ -104,12 +104,11 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 d-flex align-items-stretch">
                         <div class="content">
-                            <h3>Why Choose Medilab?</h3>
+                            <h3>Kenapa Medilab?</h3>
                             <p>
-                                " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
-                                optio ad corporis. "
+                                " Medilab merupakan layanan kesehatan profesional yang telah berhasil menangani beberapa pasien sembuh.
+                                Selain itu medilab menawarkan konsultasi terpadu mengenai anamase yang diderita pasien. 
+                                Dan juga memeliki beberapa dokter ahli sesuai bidangnya "
                             </p>
                         </div>
                     </div>
@@ -122,33 +121,33 @@
 
                 <div class="section-title">
                     <h2>Services</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Services di medilab ada 3 layanan yang diberikan, dengan layanan ini diharapkan
+                        pasien akan puas dengan layanan medilab tersebut
+                    </p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                            <h4>Lorem Ipsum</h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                            <h4>Easy Registration</h4>
+                            <p>Registrasi dapat dengan mudah diakses melalui website</p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-pills"></i></div>
-                            <h4>Sed ut perspiciatis</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <h4>Free consultation</h4>
+                            <p>Menyediakan layanan konsultasi kepada pasien sebelum dilakukan tindakan lanjut</p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-hospital-user"></i></div>
-                            <h4>Magni Dolores</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            <h4>Fast Response</h4>
+                            <p>Medilab menangani pasien baik itu konsultasi online atau offline dengan profesional</p>
                         </div>
                     </div>
 
@@ -162,10 +161,8 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Doctors</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <h2>Dokter</h2>
+                    <p>Medilab memiliki beberapa dokter yang sangat ahli dibidangnya dan memiliki pengalaman serta jam terbang yang tinggi</p>
                 </div>
 
                 <div class="row mb-5">
@@ -176,7 +173,7 @@
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Walter White</h4>
-                                <span>Chief Medical Officer</span>
+                                <span>Spesialis Kandungan</span>
                                 <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                             </div>
                         </div>
@@ -188,7 +185,7 @@
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Sarah Jhonson</h4>
-                                <span>Anesthesiologist</span>
+                                <span>Dokter Umum</span>
                                 <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
                             </div>
                         </div>
@@ -200,7 +197,7 @@
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>William Anderson</h4>
-                                <span>Cardiology</span>
+                                <span>Spesialis Penyakit Dalam</span>
                                 <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
 
                             </div>
@@ -213,7 +210,7 @@
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Amanda Jepson</h4>
-                                <span>Neurosurgeon</span>
+                                <span>Spesialis Kulit</span>
                                 <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
                             </div>
                         </div>
@@ -230,85 +227,58 @@
 
                 <div class="section-title">
                     <h2>Frequently Asked Questions</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Temukan berbagai pertanyaan tentang medilab disini</p>
                 </div>
 
                 <div class="faq-list">
                     <ul>
                         <li data-aos="fade-up">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
+                                data-bs-target="#faq-list-1">Apa itu medilab? <i
                                     class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                    purus non.
+                                   Medilab merupakan layanan kesehatan yang sudah lama beroperasi dan terpercaya
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim
-                                nunc? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-2" class="collapsed">Bisakah saya online registrasi? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
+                                    Tentu bisa, medilab menyedikan layanan registrasi melalui website registrasi agar anda tidak perlu mengantri ketika datang ke tempat kami 
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="200">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing
-                                elit? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-3" class="collapsed">Bagaimana Biayanya?
+                                <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
-                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    Biaya akan diinformasikan setelah pasien selesai melakukan pemeriksaan
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="300">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam
-                                sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-4" class="collapsed">Dimana lokasi Klinik Medilab?
+                               <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
-                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                                    Anda dapat menemukan medilab di beberapa wilayah jabodetabek yang ada saat ini dapat diperiksa melalui google maps
                                 </p>
                             </div>
                         </li>
 
-                        <li data-aos="fade-up" data-aos-delay="400" class="mb-5">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare.
-                                Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
-                                    integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                                </p>
-                            </div>
-                        </li>
 
                     </ul>
                 </div>
@@ -320,10 +290,8 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Make an Appointment</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <h2>Form Registrasi</h2>
+                    <p>Daftarkan diri anda untuk melakukan registrasi di medilab secara online untuk mendapatkan antrian ang lebih cepat</p>
                 </div>
                 <!-- action="<?=base_url()?>pasien/add_edit_save/<?php if($pasien) { echo $pasien[0]->id_pasien; } ?>" enctype="multipart/form-data" -->
                 <form method="post" role="form" action="<?=base_url()?>index.php/register_patient/<?php if($pasien) { echo $pasien[0]->id_pasien; } ?>">
@@ -366,7 +334,7 @@
                             placeholder="Your Address"></textarea>
                         <div class="validate"></div>
                     </div>
-                    <div class="text-center mt-5 mb-5"><button type="submit" class="appointment-btn">Make an Appointment</button></div>
+                    <div class="text-center mt-5 mb-5"><button type="submit" class="appointment-btn">Daftarkan data anda</button></div>
                 </form>
 
             </div>
