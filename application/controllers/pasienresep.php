@@ -8,7 +8,7 @@ class PasienResep extends CI_Controller{
     $this->load->library('pdf'); 
     
     if ($this->session->userdata('logged_in')=="") {
-			redirect('auth');
+			redirect('index.php/auth');
 		}
 		
 		$this->session->set_flashdata("halaman", "pasienresep"); //mensetting menuKepilih atau menu aktif

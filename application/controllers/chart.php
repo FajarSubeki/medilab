@@ -7,7 +7,7 @@ class Chart extends CI_Controller{
 		$this->load->helper('url');
 
 		if ($this->session->userdata('logged_in')=="") {
-			redirect('auth');
+			redirect('index.php/auth');
 		}
 		
 		$this->session->set_flashdata("halaman", "chart"); //mensetting menuKepilih atau menu aktif
