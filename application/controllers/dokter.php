@@ -14,9 +14,9 @@ class Dokter extends CI_Controller{
         $this->session->set_flashdata("halaman", "dokter"); //mensetting menuKepilih atau menu aktif
 	}
 
-	public function index(){
+	  public function index(){
         $data['data_dokter'] = $this->MDokter->get_data();
-		$this->template->load('admin/index_admin','admin/rs/doctor/index',$data);
+	    	$this->template->load('admin/index_admin','admin/rs/doctor/index',$data);
     }
 
     public function add_edit($kode=''){
@@ -49,7 +49,11 @@ class Dokter extends CI_Controller{
     $jk = $this->input->post('jk');
     $status_dokter = $this->input->post("status");
     $no_izi = $this->input->post("no_izin");
+    $description = $this->input->post("description");
     $tgl_join = date("Y-m-d", strtotime($this->input->post("tgl_join")));
+    $this->upload_data['file'] =  $this->upload->data();
+    $data = array('upload_data' => $this->upload->data());
+    $doc_file_name = $data['upload_data']['file_name'];
 
     $this->form_validation->set_rules('nama', 'Nama', 'required|min_length[5]|max_length[50]');
     $this->form_validation->set_rules('sps', 'Spesialis ', 'required');
@@ -57,6 +61,7 @@ class Dokter extends CI_Controller{
     $this->form_validation->set_rules('tgl_join', 'Tanggal Join', 'required');
     $this->form_validation->set_rules('status', 'Status Dokter', 'required');
     $this->form_validation->set_rules('no_izin', 'Nomor Izin', 'required|min_length[5]|max_length[20]');
+    $this->form_validation->set_rules('description', 'Description', 'required|min_length[5]|max_length[100]');
       
       if($this->form_validation->run() == FALSE) {
 
@@ -115,7 +120,9 @@ class Dokter extends CI_Controller{
                 'kode_spesialis'    => $sps,
                 'no_izin' =>$no_izi,
                 'tgl_join'  => $tgl_join,
-                'status_dokter' => $status_dokter
+                'status_dokter' => $status_dokter,
+                'description' => $description,
+                'image' => $doc_file_name
             );
             $add_dokter = $this->MDokter->add_dokter($data);
         } else {
@@ -130,7 +137,9 @@ class Dokter extends CI_Controller{
             'kode_spesialis'    => $sps,
             'no_izin' =>$no_izi,
             'tgl_join'  => $tgl_join,
-            'status_dokter' => $status_dokter
+            'status_dokter' => $status_dokter,
+            'description' => $description,
+            'image' => $doc_file_name 
           );
           $edit_dokter = $this->MDokter->edit_dokter($data, $kode);
         }

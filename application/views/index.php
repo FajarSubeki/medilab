@@ -127,30 +127,17 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                            <h4>Easy Registration</h4>
-                            <p>Registrasi dapat dengan mudah diakses melalui website</p>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-pills"></i></div>
-                            <h4>Free consultation</h4>
-                            <p>Menyediakan layanan konsultasi kepada pasien sebelum dilakukan tindakan lanjut</p>
+                    <?php foreach ($data_services as $row):?>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="icon-box">
+                                <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                                <h4><?php echo $row['title'];?></h4>
+                                <p><?php echo $row['description'];?></p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="fas fa-hospital-user"></i></div>
-                            <h4>Fast Response</h4>
-                            <p>Medilab menangani pasien baik itu konsultasi online atau offline dengan profesional</p>
-                        </div>
-                    </div>
-
+                    <?php endforeach; ?>
+                   
                 </div>
 
             </div>
@@ -166,56 +153,23 @@
                 </div>
 
                 <div class="row mb-5">
-
-                    <div class="col-lg-6">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=base_url()?>assets/img/doctors/doctors-1.jpg"
-                                    class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Spesialis Kandungan</span>
-                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                
+                    <?php foreach ($data_dokter as $row):?>
+                        <div class="col-lg-6">
+                            <div class="member d-flex align-items-start">
+                                <div class="pic"><img src="<?=base_url()?>assets/img/doctors/<?php echo $row['image'];?>"
+                                        class="img-fluid" alt=""></div>
+                                <div class="member-info">
+                                    <h4><?php echo $row['nama_dokter'];?></h4>
+                                    <span><?php echo $row['kode_spesialis'];?></span>
+                                    <p><?php echo $row['description'];?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                      
+                    <?php endforeach; ?>
 
-                    <div class="col-lg-6 mt-4 mt-lg-0">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=base_url()?>assets/img/doctors/doctors-2.jpg"
-                                    class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Dokter Umum</span>
-                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=base_url()?>assets/img/doctors/doctors-3.jpg"
-                                    class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>Spesialis Penyakit Dalam</span>
-                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="<?=base_url()?>assets/img/doctors/doctors-4.jpg"
-                                    class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Spesialis Kulit</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                            </div>
-                        </div>
-                    </div>
-
+                
                 </div>
 
             </div>
@@ -232,53 +186,21 @@
 
                 <div class="faq-list">
                     <ul>
-                        <li data-aos="fade-up">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                data-bs-target="#faq-list-1">Apa itu medilab? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                                <p>
-                                   Medilab merupakan layanan kesehatan yang sudah lama beroperasi dan terpercaya
-                                </p>
-                            </div>
-                        </li>
+                        <?php foreach ($data_faq as $row):?>
 
-                        <li data-aos="fade-up" data-aos-delay="100">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">Bisakah saya online registrasi? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Tentu bisa, medilab menyedikan layanan registrasi melalui website registrasi agar anda tidak perlu mengantri ketika datang ke tempat kami 
-                                </p>
-                            </div>
-                        </li>
+                            <li data-aos="fade-up">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                                    data-bs-target="#faq-list-<?php echo $row['kode_faq'];?>"><?php echo $row['title'];?> <i
+                                        class="bx bx-chevron-down icon-show"></i><i
+                                        class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-<?php echo $row['kode_faq'];?>" class="collapse show" data-bs-parent=".faq-list">
+                                    <p>
+                                    <?php echo $row['description'];?>
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li data-aos="fade-up" data-aos-delay="200">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-3" class="collapsed">Bagaimana Biayanya?
-                                <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Biaya akan diinformasikan setelah pasien selesai melakukan pemeriksaan
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="300">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-4" class="collapsed">Dimana lokasi Klinik Medilab?
-                               <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Anda dapat menemukan medilab di beberapa wilayah jabodetabek yang ada saat ini dapat diperiksa melalui google maps
-                                </p>
-                            </div>
-                        </li>
-
+                        <?php endforeach; ?>
 
                     </ul>
                 </div>

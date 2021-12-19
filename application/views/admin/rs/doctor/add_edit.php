@@ -21,6 +21,8 @@
                         action="<?=base_url()?>index.php/dokter/add_edit_save/<?php if($dokter) { echo $dokter[0]->kode_dokter; } ?>"
                         enctype="multipart/form-data">
 
+                        <?php echo form_open_multipart('dokter/add_edit_save'); ?>
+
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 ">Kode Dokter</label>
                             <div class="col-md-9 col-sm-9 ">
@@ -122,6 +124,13 @@
                                         Perempuan
                                     </label>
                                 </div>
+                            </div>
+                        </div>
+                         <div class="form-group row ">
+                            <label class="control-label col-md-3 col-sm-3 ">Description</label>
+                            <div class="col-md-9 col-sm-9 ">
+                                <input type="text" class="form-control" placeholder="Description" name="description"
+                                    value="<?php if($dokter) { echo $dokter[0]->description; } ?>">
                             </div>
                         </div>
                         <div class="form-group row">

@@ -6,13 +6,20 @@ class Welcome extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('MPasien');
+		$this->load->model('MServices');
+		$this->load->model('MDokter');
+		$this->load->model('MFaq');
 	}
 
 	public function index()
 	{
 		$data['pasien'] = "";
 		$no_rm = "RM-".date("dmy").rand(1000,9999);
-		$data['no_rm'] = $no_rm;            
+		$data['no_rm'] = $no_rm;
+		$data['data_services'] = $this->MServices->get_data();
+        $data['data_sps_dokter'] = $this->MDokter->get_data_sps();
+		$data['data_faq'] = $this->MFaq->get_data();
+        $data['data_dokter'] = $this->MDokter->get_data();
 		$this->template->load('index','index',$data);
 	}
 
