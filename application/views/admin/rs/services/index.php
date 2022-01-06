@@ -21,9 +21,6 @@
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         No</th>
                                     <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                        Icon</th>
-                                    <th
                                         class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Title</th>
                                     <th
@@ -38,11 +35,7 @@
                                     foreach($data_services as $row) {
                                 ?>
                                 <tr>
-                                    <td class="align-middle text-center text-xs"><?php echo $no; ?></td>
-                                    <td class="align-middle text-center text-xs">
-                                        <h6 class="mb-0 text-xs"><?php echo $row['icon'];?></h6>
-                                    </td>
-                                    <td class="align-middle text-center text-xs">
+                                    <td class="align-middle text-center text-xs"><?php echo $no; ?></td>                                    <td class="align-middle text-center text-xs">
                                         <p class="text-xs text-secondary mb-0">
                                             <?php echo $row['title'];?>
                                         </p>
